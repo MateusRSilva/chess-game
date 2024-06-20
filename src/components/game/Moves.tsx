@@ -7,9 +7,9 @@ import { SettingsContext } from '@/providers/SettingsProvider';
 
 const MoveContainer = styled.div`
   grid-area: moves;
-  overflow-y: auto;
+  overflow: auto;
+  height: 21rem;
   background-color: ${props => props.theme.menus.moves.background};
-  max-height: min(calc(100vw - 450px), calc(1000px - 430px));
   @media (max-width: 800px) {
     max-height: none;
   }
